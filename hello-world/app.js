@@ -5,8 +5,7 @@
 const AWS = require('aws-sdk');
 const s3 = new AWS.S3();
 
-let data;
-let response;
+
 /**
   * 
  */
@@ -26,13 +25,11 @@ exports.lambdaHandler = async event  => {
         var resArray = minecraft['RECIPES'];
        
         resArray.forEach(function(elems) {
-
             elems.forEach(function (elem) {
-              console.log(elem.id);
-              console.log(elem.desc);
+              console.log("iD is " + elem.id);
+              console.log("DES is " + elem.desc);
             })
           })
-          
           
           itemssArray.forEach(function (elems) {
               elems.forEach(function (elem) {
