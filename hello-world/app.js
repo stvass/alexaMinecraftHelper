@@ -27,7 +27,7 @@ exports.lambdaHandler = async event  => {
         resArray.forEach(function(elems) {
             elems.forEach(function (elem) {
               console.log("iD is " + elem.id);
-              console.log("DES is " + elem.desc);
+              console.log("DESs is " + elem.desc);
             })
           })
           
